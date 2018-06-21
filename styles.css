@@ -1,0 +1,165 @@
+.container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Merienda', cursive;
+}
+
+
+#board {
+  flex-wrap: wrap;
+  display: flex;
+  background-color: #B9B0BC;
+  width: 700px;
+  height: 700px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.card {
+  width: 150px;
+  height: 150px;
+  list-style: none;
+  display: flex;
+  background-color: #8B828E;
+  border-radius: 10px;
+  font-size: 0;
+  color: white;
+  text-shadow: 0px 0px 10px #8B828E;
+  border-color: #C3D8CB;
+}
+
+
+::before {
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.close {
+  background-color: #DBDDE9;
+}
+
+
+.open {
+  display: inline-block;
+  font-size: 35px;
+}
+
+
+.pair {
+  display: inline-block;
+  font-size: 35px;
+}
+
+
+#score {
+  text-align: left;
+  padding: 0px;
+  margin: 0;
+  display: inline-block;
+  width: 400px;
+  font-family: 'Noto Serif', serif;
+}
+
+
+#rating {
+  padding: 0px;
+  margin: 0px 7px 0px 0px;
+  display: inline-block;
+}
+
+
+#timer {
+  margin-left: 25px;
+}
+
+
+#reset {
+  display: inline-block;
+  float: right;
+}
+
+
+#modalBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+.show {
+  position: relative;
+  background: #C3D8CB;
+  transform: translate(-52%, -345%);
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  opacity: 0.90;
+  color: white;
+  text-shadow: 0px 0px 15px black;
+  text-align: center;
+  padding-top: 5px;
+  font-family: 'Noto Serif', serif;
+  line-height: 2.0;
+}
+
+
+.congratsModal > span {
+  display: block;
+}
+
+
+.congratsModal > button {
+  height: 48px;
+  width: 150px;
+  margin-top: 30px;
+  font-family: 'Merienda', cursive;
+  font-size: 16px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (max-width: 560px) {
+	#board { 
+    width: 350px;
+    height: 350px;}
+  .card {
+    width: 75px;
+    height: 75px;}
+  #score {
+    max-width: 200px;
+  }
+  .show {
+    transform: translate(-52%, -235%);
+  }
+}
+
+
+@media screen and (min-width: 561px) and (max-width: 780px) {
+	#board { 
+    width: 525px;
+    height: 525px;}
+  .card {
+    width: 112.5px;
+    height: 112.5px;}
+  #score {
+    max-width: 200px;
+  }
+   .show {
+    transform: translate(-52%, -290%);
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>Memory Game</title>
+    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.12/css/all.css' integrity='sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9' crossorigin='anonymous'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda|Noto+Serif' rel='stylesheet'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  </head>
+
+  <body>   
+    <div class='container'>
+      <header>
+        <h1>Matching Game</h1>
+      </header>     
+      <section id='score'>
+        <ul id='rating'>
+          <li class='fas fa-star' id='star1'></li>
+          <li class='fas fa-star' id='star2'></li>
+          <li class='fas fa-star' id='star3'></li>
+        </ul>
+        <span id='moves'>0</span> Moves
+        <span id='timer'>0 mins 0 secs</span>
+        <div id='reset'>
+          <i class='fas fa-redo'></i>
+        </div>
+      </section>     
+        <ul id='board'>
+        </ul>
+    </div>
+    
+    <div class='modal' id='modalBox'>
+      <div class='congratsModal'>
+        <h2 id='congratulations'></h2>
+        <span id='totalMoves'></span>
+        <span id='timeElapsed'></span>
+        <span id='starRating'></span>
+        <button id="newGame" class="hidden">New Game</button>
+      </div>
+    </div>
+    
+    <script src='app.js'></script>  
+  </body>
+</html>
