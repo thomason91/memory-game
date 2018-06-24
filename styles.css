@@ -106,7 +106,7 @@
   height: 300px;
   opacity: 0.90;
   color: white;
-  text-shadow: 0px 0px 15px black;
+  text-shadow: 0px 0px 6px black;
   text-align: center;
   padding-top: 5px;
   font-family: 'Noto Serif', serif;
@@ -141,7 +141,7 @@
     width: 75px;
     height: 75px;}
   #score {
-    max-width: 200px;
+    max-width: 300px;
   }
   .show {
     transform: translate(-52%, -235%);
@@ -157,7 +157,7 @@
     width: 112.5px;
     height: 112.5px;}
   #score {
-    max-width: 200px;
+    max-width: 300px;
   }
    .show {
     transform: translate(-52%, -290%);

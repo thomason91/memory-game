@@ -14,7 +14,7 @@ The Memory Game was built as part of Udacity’s Front End Nanodegree program. I
 
 ## Instructions
 
-Download the repository located at https://github.com/thomason91/memory-game, and open index.html in your browser.
+Download the repository located at https://github.com/thomason91/memory-game and open index.html in your browser.
 
 ## Acknowledgments
 
